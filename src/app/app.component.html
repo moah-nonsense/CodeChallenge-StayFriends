@@ -1,0 +1,14 @@
+<div class="data-box">
+  <div *ngFor="let state of states" class="states">
+    <a href="{{state.url}}">
+      <h2>{{state.name}}</h2>
+      <p>{{state.schoolCount}} Schulen</p>
+    </a>
+  </div>
+
+  <div id="persons" class="flex-container">
+    <div *ngFor="let person of persons">
+      {{person.name}}
+    </div>
+  </div>
+</div>

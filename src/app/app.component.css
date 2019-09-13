@@ -1,0 +1,63 @@
+div.data-box {
+  width: 102.3%;
+}
+
+div.states {
+  display: inline-block;
+  width: 32%;
+  margin: 5px;
+  padding: 10px;
+  border-style: solid;
+  border-color: #ddd;
+  border-width: 10px;
+  box-sizing: border-box;
+}
+
+.states a {
+  text-decoration: none;
+}
+
+.states a h2 {
+  margin: 0 0 5px 0;
+  color: #666;
+  font-size: 100%;
+}
+
+.states a p {
+  margin: 0;
+  /*font-weight: bold;*/
+  color: #b3b3b3;
+  font-size: 95%;
+}
+div#persons {
+  display: flex;
+}
+
+div#persons div {
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin: 5px 0 0 5px;
+  line-height: 2;
+  font-weight: bold;
+  color: #666;
+  background-color: #ddd;
+  text-transform: uppercase;
+}
+
+div#persons div p {
+  color: #666;
+}
+
+@media screen and (max-width: 800px) {
+  div.states {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  div.states {
+    width: 100%;
+  }
+}
