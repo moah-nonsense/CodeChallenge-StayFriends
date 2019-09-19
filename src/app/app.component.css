@@ -1,12 +1,28 @@
+div.container-box {
+  padding: 0 0 0 5px;
+}
+
+div.data-box {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 33%;
+  padding: 5px;
+}
+
+div.data-box:first-child,
+div.data-box:nth-child(2),
+div.data-box:nth-child(3) {
+  padding-top: 10px;
+}
+
 div.states {
   display: inline-block;
-  width: 33%;
-  margin: 5px 3px;
+  box-sizing: border-box;
+  width: 100%;
   padding: 10px;
   border-style: solid;
   border-color: #ddd;
   border-width: 10px;
-  box-sizing: border-box;
 }
 
 .states a {
@@ -47,13 +63,13 @@ div#persons div p {
 }
 
 @media screen and (max-width: 800px) {
-  div.states {
-    width: 48%;
+  div.data-box {
+    width: 50%;
   }
 }
 
 @media screen and (max-width: 500px) {
-  div.states {
+  div.data-box {
     width: 100%;
   }
 }
