@@ -6,6 +6,7 @@ import {AppComponent} from './app.component';
 import {FormsModule} from '@angular/forms';
 import {StatesService} from './services/states.service';
 import {HttpClientModule} from '@angular/common/http';
+import {Bundesland} from './api/bundesland';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {HttpClientModule} from '@angular/common/http';
     HttpClientModule
   ],
   providers: [
-    StatesService
+    StatesService,
+    Bundesland
   ],
   bootstrap: [AppComponent]
 })

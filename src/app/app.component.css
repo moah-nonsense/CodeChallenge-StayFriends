@@ -1,11 +1,7 @@
-div.data-box {
-  width: 102.3%;
-}
-
 div.states {
   display: inline-block;
-  width: 32%;
-  margin: 5px;
+  width: 33%;
+  margin: 5px 3px;
   padding: 10px;
   border-style: solid;
   border-color: #ddd;
