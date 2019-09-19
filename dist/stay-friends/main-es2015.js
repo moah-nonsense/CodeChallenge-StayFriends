@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"data-box\">\n  <div *ngFor=\"let state of states\" class=\"states\">\n    <a href=\"{{state.url}}\">\n      <h2>{{state.name}}</h2>\n      <p>{{state.schoolCount}} Schulen</p>\n    </a>\n  </div>\n\n  <div id=\"persons\" class=\"flex-container\">\n    <div *ngFor=\"let person of persons\">\n      {{person.name}}\n    </div>\n  </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"data-box\">\r\n  <div *ngFor=\"let state of states\" class=\"states\">\r\n    <a href=\"{{state.url}}\">\r\n      <h2>{{state.name}}</h2>\r\n      <p>{{state.schoolCount}} Schulen</p>\r\n    </a>\r\n  </div>\r\n\r\n  <div id=\"persons\" class=\"flex-container\">\r\n    <div *ngFor=\"let person of persons\">\r\n      {{person.name}}\r\n    </div>\r\n  </div>\r\n</div>\r\n");
 
 /***/ }),
 
@@ -265,6 +265,204 @@ function __importDefault(mod) {
 
 /***/ }),
 
+/***/ "./src/app/api/bundesland.ts":
+/*!***********************************!*\
+  !*** ./src/app/api/bundesland.ts ***!
+  \***********************************/
+/*! exports provided: Bundesland */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Bundesland", function() { return Bundesland; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
+class Bundesland {
+    constructor() {
+        // @ts-ignore
+        this.accountDeactivate = false;
+        this.stateList = [
+            {
+                count: '0',
+                foreignCountry: false,
+                letter: 'B',
+                name: 'Baden-Württemberg',
+                schoolCount: 9594,
+                stadtStaat: false,
+                url: '/Bundesland/Baden-Wuerttemberg'
+            },
+            {
+                count: 0,
+                foreignCountry: false,
+                letter: 'B',
+                name: 'Bayern',
+                schoolCount: 9020,
+                stadtStaat: false,
+                url: '/Bundesland/Bayern'
+            },
+            {
+                count: 0,
+                foreignCountry: false,
+                letter: 'B',
+                name: 'Berlin',
+                schoolCount: 4215,
+                stadtStaat: true,
+                url: '/Bundesland/Berlin'
+            },
+            {
+                count: 0,
+                foreignCountry: false,
+                letter: 'B',
+                name: 'Brandenburg',
+                schoolCount: 3505,
+                stadtStaat: false,
+                url: '/Bundesland/Brandenburg'
+            },
+            {
+                count: 0,
+                foreignCountry: false,
+                letter: 'B',
+                name: 'Bremen',
+                schoolCount: 909,
+                stadtStaat: false,
+                url: '/Bundesland/Bremen'
+            },
+            {
+                count: 0,
+                foreignCountry: false,
+                letter: 'H',
+                name: 'Hamburg',
+                schoolCount: 2333,
+                stadtStaat: true,
+                url: '/Bundesland/Hamburg'
+            },
+            {
+                count: 0,
+                foreignCountry: false,
+                letter: 'H',
+                name: 'Hessen',
+                schoolCount: 4763,
+                stadtStaat: false,
+                url: '/Bundesland/Hessen'
+            },
+            {
+                count: 0,
+                foreignCountry: false,
+                letter: 'M',
+                name: 'Mecklenburg-Vorpommern',
+                schoolCount: 2908,
+                stadtStaat: false,
+                url: '/Bundesland/Mecklenburg-Vorpommern'
+            },
+            {
+                count: 0,
+                foreignCountry: false,
+                letter: 'N',
+                name: 'Niedersachsen',
+                schoolCount: 8687,
+                stadtStaat: false,
+                url: '/Bundesland/Niedersachsen'
+            },
+            {
+                count: 0,
+                foreignCountry: false,
+                letter: 'N',
+                name: 'Nordrhein-Westfalen',
+                schoolCount: 17477,
+                stadtStaat: false,
+                url: '/Bundesland/Nordrhein-Westfalen'
+            },
+            {
+                count: 0,
+                foreignCountry: false,
+                letter: 'R',
+                name: 'Rheinland-Pfalz',
+                schoolCount: 3812,
+                stadtStaat: false,
+                url: '/Bundesland/Rheinland-Pfalz'
+            },
+            {
+                count: 0,
+                foreignCountry: false,
+                letter: 'S',
+                name: 'Saarland',
+                schoolCount: 1084,
+                stadtStaat: false,
+                url: '/Bundesland/Saarland'
+            },
+            {
+                count: 0,
+                foreignCountry: false,
+                letter: 'S',
+                name: 'Sachsen',
+                schoolCount: 6189,
+                stadtStaat: false,
+                url: '/Bundesland/Sachsen'
+            },
+            {
+                count: 0,
+                foreignCountry: false,
+                letter: 'S',
+                name: 'Sachsen-Anhalt',
+                schoolCount: 3865,
+                stadtStaat: false,
+                url: '/Bundesland/Sachsen-Anhalt'
+            },
+            {
+                count: 0,
+                foreignCountry: false,
+                letter: 'S',
+                name: 'Schleswig-Holstein',
+                schoolCount: 2826,
+                stadtStaat: false,
+                url: '/Bundesland/Schleswig-Holstein'
+            },
+            {
+                count: 0,
+                foreignCountry: false,
+                letter: 'T',
+                name: 'Thüringen',
+                schoolCount: 3095,
+                stadtStaat: false,
+                url: '/Bundesland/Thueringen'
+            }
+        ];
+        this.personIndexCounts = {
+            a: 1,
+            b: 2,
+            c: 0,
+            d: 2,
+            e: 1,
+            f: 0,
+            g: 1,
+            h: 0,
+            i: 0,
+            j: 0,
+            k: 0,
+            l: 9,
+            m: 18,
+            n: 2,
+            o: 0,
+            p: 0,
+            q: 0,
+            r: 1,
+            s: 4,
+            t: 2,
+            u: 0,
+            v: 1,
+            w: 2,
+            x: 0,
+            y: 0,
+            z: 0
+        };
+        this.redirect = false;
+        this.showNewTooltip = false;
+    }
+}
+
+
+/***/ }),
+
 /***/ "./src/app/app-routing.module.ts":
 /*!***************************************!*\
   !*** ./src/app/app-routing.module.ts ***!
@@ -304,7 +502,7 @@ AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("div.data-box {\r\n  width: 102.3%;\r\n}\r\n\r\ndiv.states {\r\n  display: inline-block;\r\n  width: 32%;\r\n  margin: 5px;\r\n  padding: 10px;\r\n  border-style: solid;\r\n  border-color: #ddd;\r\n  border-width: 10px;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.states a {\r\n  text-decoration: none;\r\n}\r\n\r\n.states a h2 {\r\n  margin: 0 0 5px 0;\r\n  color: #666;\r\n  font-size: 100%;\r\n}\r\n\r\n.states a p {\r\n  margin: 0;\r\n  /*font-weight: bold;*/\r\n  color: #b3b3b3;\r\n  font-size: 95%;\r\n}\r\n\r\ndiv#persons {\r\n  display: flex;\r\n}\r\n\r\ndiv#persons div {\r\n  display: flex;\r\n  justify-content: center;\r\n  width: 30px;\r\n  height: 30px;\r\n  margin: 5px 0 0 5px;\r\n  line-height: 2;\r\n  font-weight: bold;\r\n  color: #666;\r\n  background-color: #ddd;\r\n  text-transform: uppercase;\r\n}\r\n\r\ndiv#persons div p {\r\n  color: #666;\r\n}\r\n\r\n@media screen and (max-width: 800px) {\r\n  div.states {\r\n    width: 48%;\r\n  }\r\n}\r\n\r\n@media screen and (max-width: 500px) {\r\n  div.states {\r\n    width: 100%;\r\n  }\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFhO0FBQ2Y7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsVUFBVTtFQUNWLFdBQVc7RUFDWCxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsc0JBQXNCO0FBQ3hCOztBQUVBO0VBQ0UscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLFdBQVc7RUFDWCxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsU0FBUztFQUNULHFCQUFxQjtFQUNyQixjQUFjO0VBQ2QsY0FBYztBQUNoQjs7QUFDQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsV0FBVztFQUNYLFlBQVk7RUFDWixtQkFBbUI7RUFDbkIsY0FBYztFQUNkLGlCQUFpQjtFQUNqQixXQUFXO0VBQ1gsc0JBQXNCO0VBQ3RCLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFO0lBQ0UsVUFBVTtFQUNaO0FBQ0Y7O0FBRUE7RUFDRTtJQUNFLFdBQVc7RUFDYjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJkaXYuZGF0YS1ib3gge1xyXG4gIHdpZHRoOiAxMDIuMyU7XHJcbn1cclxuXHJcbmRpdi5zdGF0ZXMge1xyXG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICB3aWR0aDogMzIlO1xyXG4gIG1hcmdpbjogNXB4O1xyXG4gIHBhZGRpbmc6IDEwcHg7XHJcbiAgYm9yZGVyLXN0eWxlOiBzb2xpZDtcclxuICBib3JkZXItY29sb3I6ICNkZGQ7XHJcbiAgYm9yZGVyLXdpZHRoOiAxMHB4O1xyXG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbn1cclxuXHJcbi5zdGF0ZXMgYSB7XHJcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xyXG59XHJcblxyXG4uc3RhdGVzIGEgaDIge1xyXG4gIG1hcmdpbjogMCAwIDVweCAwO1xyXG4gIGNvbG9yOiAjNjY2O1xyXG4gIGZvbnQtc2l6ZTogMTAwJTtcclxufVxyXG5cclxuLnN0YXRlcyBhIHAge1xyXG4gIG1hcmdpbjogMDtcclxuICAvKmZvbnQtd2VpZ2h0OiBib2xkOyovXHJcbiAgY29sb3I6ICNiM2IzYjM7XHJcbiAgZm9udC1zaXplOiA5NSU7XHJcbn1cclxuZGl2I3BlcnNvbnMge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbn1cclxuXHJcbmRpdiNwZXJzb25zIGRpdiB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICB3aWR0aDogMzBweDtcclxuICBoZWlnaHQ6IDMwcHg7XHJcbiAgbWFyZ2luOiA1cHggMCAwIDVweDtcclxuICBsaW5lLWhlaWdodDogMjtcclxuICBmb250LXdlaWdodDogYm9sZDtcclxuICBjb2xvcjogIzY2NjtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZGRkO1xyXG4gIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XHJcbn1cclxuXHJcbmRpdiNwZXJzb25zIGRpdiBwIHtcclxuICBjb2xvcjogIzY2NjtcclxufVxyXG5cclxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogODAwcHgpIHtcclxuICBkaXYuc3RhdGVzIHtcclxuICAgIHdpZHRoOiA0OCU7XHJcbiAgfVxyXG59XHJcblxyXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA1MDBweCkge1xyXG4gIGRpdi5zdGF0ZXMge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG59XHJcbiJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("div.states {\r\n  display: inline-block;\r\n  width: 33%;\r\n  margin: 5px 3px;\r\n  padding: 10px;\r\n  border-style: solid;\r\n  border-color: #ddd;\r\n  border-width: 10px;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.states a {\r\n  text-decoration: none;\r\n}\r\n\r\n.states a h2 {\r\n  margin: 0 0 5px 0;\r\n  color: #666;\r\n  font-size: 100%;\r\n}\r\n\r\n.states a p {\r\n  margin: 0;\r\n  /*font-weight: bold;*/\r\n  color: #b3b3b3;\r\n  font-size: 95%;\r\n}\r\n\r\ndiv#persons {\r\n  display: flex;\r\n}\r\n\r\ndiv#persons div {\r\n  display: flex;\r\n  justify-content: center;\r\n  width: 30px;\r\n  height: 30px;\r\n  margin: 5px 0 0 5px;\r\n  line-height: 2;\r\n  font-weight: bold;\r\n  color: #666;\r\n  background-color: #ddd;\r\n  text-transform: uppercase;\r\n}\r\n\r\ndiv#persons div p {\r\n  color: #666;\r\n}\r\n\r\n@media screen and (max-width: 800px) {\r\n  div.states {\r\n    width: 48%;\r\n  }\r\n}\r\n\r\n@media screen and (max-width: 500px) {\r\n  div.states {\r\n    width: 100%;\r\n  }\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBcUI7RUFDckIsVUFBVTtFQUNWLGVBQWU7RUFDZixhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsc0JBQXNCO0FBQ3hCOztBQUVBO0VBQ0UscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLFdBQVc7RUFDWCxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsU0FBUztFQUNULHFCQUFxQjtFQUNyQixjQUFjO0VBQ2QsY0FBYztBQUNoQjs7QUFDQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsV0FBVztFQUNYLFlBQVk7RUFDWixtQkFBbUI7RUFDbkIsY0FBYztFQUNkLGlCQUFpQjtFQUNqQixXQUFXO0VBQ1gsc0JBQXNCO0VBQ3RCLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFO0lBQ0UsVUFBVTtFQUNaO0FBQ0Y7O0FBRUE7RUFDRTtJQUNFLFdBQVc7RUFDYjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJkaXYuc3RhdGVzIHtcclxuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgd2lkdGg6IDMzJTtcclxuICBtYXJnaW46IDVweCAzcHg7XHJcbiAgcGFkZGluZzogMTBweDtcclxuICBib3JkZXItc3R5bGU6IHNvbGlkO1xyXG4gIGJvcmRlci1jb2xvcjogI2RkZDtcclxuICBib3JkZXItd2lkdGg6IDEwcHg7XHJcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxufVxyXG5cclxuLnN0YXRlcyBhIHtcclxuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbn1cclxuXHJcbi5zdGF0ZXMgYSBoMiB7XHJcbiAgbWFyZ2luOiAwIDAgNXB4IDA7XHJcbiAgY29sb3I6ICM2NjY7XHJcbiAgZm9udC1zaXplOiAxMDAlO1xyXG59XHJcblxyXG4uc3RhdGVzIGEgcCB7XHJcbiAgbWFyZ2luOiAwO1xyXG4gIC8qZm9udC13ZWlnaHQ6IGJvbGQ7Ki9cclxuICBjb2xvcjogI2IzYjNiMztcclxuICBmb250LXNpemU6IDk1JTtcclxufVxyXG5kaXYjcGVyc29ucyB7XHJcbiAgZGlzcGxheTogZmxleDtcclxufVxyXG5cclxuZGl2I3BlcnNvbnMgZGl2IHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gIHdpZHRoOiAzMHB4O1xyXG4gIGhlaWdodDogMzBweDtcclxuICBtYXJnaW46IDVweCAwIDAgNXB4O1xyXG4gIGxpbmUtaGVpZ2h0OiAyO1xyXG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gIGNvbG9yOiAjNjY2O1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNkZGQ7XHJcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcclxufVxyXG5cclxuZGl2I3BlcnNvbnMgZGl2IHAge1xyXG4gIGNvbG9yOiAjNjY2O1xyXG59XHJcblxyXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA4MDBweCkge1xyXG4gIGRpdi5zdGF0ZXMge1xyXG4gICAgd2lkdGg6IDQ4JTtcclxuICB9XHJcbn1cclxuXHJcbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDUwMHB4KSB7XHJcbiAgZGl2LnN0YXRlcyB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICB9XHJcbn1cclxuIl19 */");
 
 /***/ }),
 
@@ -334,24 +532,14 @@ let AppComponent = class AppComponent {
     }
     ngOnInit() {
         /// following code is the best practice approach if the request to the api is a success
-        // this.statesServiceService.getStates()
-        //   .subscribe(response => {
-        //     this.states = response;
-        //   });
-        // tslint:disable-next-line:forin
-        // for (const person in this.states.personIndexCounts) {
-        //   const currentPersonCount = {
-        //     name: person,
-        //     count: this.states.personIndexCounts[person]
-        //   }
-        //   if (this.states.personIndexCounts[person] > 0) {
-        //     this.persons.push(currentPersonCount);
-        //   }
-        // };
-        /// fetching mocked data from states.service -> statesData object
-        this.states = this.statesServiceService.getStates();
-        this.personCount = this.statesServiceService.getPersonIndexCount();
-        debugger;
+        this.statesServiceService.getStates()
+            .subscribe(response => {
+            this.states = response;
+        });
+        this.statesServiceService.getPersonIndexCount()
+            .subscribe(result => {
+            this.personCount = result;
+        });
         // tslint:disable-next-line:forin
         for (const person in this.personCount) {
             const currentPersonCount = {
@@ -363,6 +551,19 @@ let AppComponent = class AppComponent {
             }
         }
         ;
+        // tslint:disable-next-line:forin
+        // for (const person in this.states.personIndexCounts) {
+        //   const currentPersonCount = {
+        //     name: person,
+        //     count: this.states.personIndexCounts[person]
+        //   }
+        //   if (this.states.personIndexCounts[person] > 0) {
+        //     this.persons.push(currentPersonCount);
+        //   }
+        // };
+        /// fetching mocked data from states.service -> statesData object
+        // this.states = this.statesServiceService.getStates();
+        // this.personCount = this.statesServiceService.getPersonIndexCount();
     }
 };
 AppComponent.ctorParameters = () => [
@@ -398,6 +599,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var _services_states_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./services/states.service */ "./src/app/services/states.service.ts");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _api_bundesland__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./api/bundesland */ "./src/app/api/bundesland.ts");
+
 
 
 
@@ -420,7 +623,8 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_common_http__WEBPACK_IMPORTED_MODULE_7__["HttpClientModule"]
         ],
         providers: [
-            _services_states_service__WEBPACK_IMPORTED_MODULE_6__["StatesService"]
+            _services_states_service__WEBPACK_IMPORTED_MODULE_6__["StatesService"],
+            _api_bundesland__WEBPACK_IMPORTED_MODULE_8__["Bundesland"]
         ],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
     })
@@ -443,207 +647,216 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _api_bundesland__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../api/bundesland */ "./src/app/api/bundesland.ts");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+
+
 
 
 
 let StatesService = class StatesService {
-    constructor(http) {
+    constructor(http, bundeslandData) {
         this.http = http;
-        this.statesData = {
-            accountDeactivated: false,
-            stateList: [
-                {
-                    count: 0,
-                    foreignCountry: false,
-                    letter: 'B',
-                    name: 'Baden-Württemberg',
-                    schoolCount: 9594,
-                    stadtStaat: false,
-                    url: '/Bundesland/Baden-Wuerttemberg'
-                },
-                {
-                    count: 0,
-                    foreignCountry: false,
-                    letter: 'B',
-                    name: 'Bayern',
-                    schoolCount: 9020,
-                    stadtStaat: false,
-                    url: '/Bundesland/Bayern'
-                },
-                {
-                    count: 0,
-                    foreignCountry: false,
-                    letter: 'B',
-                    name: 'Berlin',
-                    schoolCount: 4215,
-                    stadtStaat: true,
-                    url: '/Bundesland/Berlin'
-                },
-                {
-                    count: 0,
-                    foreignCountry: false,
-                    letter: 'B',
-                    name: 'Brandenburg',
-                    schoolCount: 3505,
-                    stadtStaat: false,
-                    url: '/Bundesland/Brandenburg'
-                },
-                {
-                    count: 0,
-                    foreignCountry: false,
-                    letter: 'B',
-                    name: 'Bremen',
-                    schoolCount: 909,
-                    stadtStaat: false,
-                    url: '/Bundesland/Bremen'
-                },
-                {
-                    count: 0,
-                    foreignCountry: false,
-                    letter: 'H',
-                    name: 'Hamburg',
-                    schoolCount: 2333,
-                    stadtStaat: true,
-                    url: '/Bundesland/Hamburg'
-                },
-                {
-                    count: 0,
-                    foreignCountry: false,
-                    letter: 'H',
-                    name: 'Hessen',
-                    schoolCount: 4763,
-                    stadtStaat: false,
-                    url: '/Bundesland/Hessen'
-                },
-                {
-                    count: 0,
-                    foreignCountry: false,
-                    letter: 'M',
-                    name: 'Mecklenburg-Vorpommern',
-                    schoolCount: 2908,
-                    stadtStaat: false,
-                    url: '/Bundesland/Mecklenburg-Vorpommern'
-                },
-                {
-                    count: 0,
-                    foreignCountry: false,
-                    letter: 'N',
-                    name: 'Niedersachsen',
-                    schoolCount: 8687,
-                    stadtStaat: false,
-                    url: '/Bundesland/Niedersachsen'
-                },
-                {
-                    count: 0,
-                    foreignCountry: false,
-                    letter: 'N',
-                    name: 'Nordrhein-Westfalen',
-                    schoolCount: 17477,
-                    stadtStaat: false,
-                    url: '/Bundesland/Nordrhein-Westfalen'
-                },
-                {
-                    count: 0,
-                    foreignCountry: false,
-                    letter: 'R',
-                    name: 'Rheinland-Pfalz',
-                    schoolCount: 3812,
-                    stadtStaat: false,
-                    url: '/Bundesland/Rheinland-Pfalz'
-                },
-                {
-                    count: 0,
-                    foreignCountry: false,
-                    letter: 'S',
-                    name: 'Saarland',
-                    schoolCount: 1084,
-                    stadtStaat: false,
-                    url: '/Bundesland/Saarland'
-                },
-                {
-                    count: 0,
-                    foreignCountry: false,
-                    letter: 'S',
-                    name: 'Sachsen',
-                    schoolCount: 6189,
-                    stadtStaat: false,
-                    url: '/Bundesland/Sachsen'
-                },
-                {
-                    count: 0,
-                    foreignCountry: false,
-                    letter: 'S',
-                    name: 'Sachsen-Anhalt',
-                    schoolCount: 3865,
-                    stadtStaat: false,
-                    url: '/Bundesland/Sachsen-Anhalt'
-                },
-                {
-                    count: 0,
-                    foreignCountry: false,
-                    letter: 'S',
-                    name: 'Schleswig-Holstein',
-                    schoolCount: 2826,
-                    stadtStaat: false,
-                    url: '/Bundesland/Schleswig-Holstein'
-                },
-                {
-                    count: 0,
-                    foreignCountry: false,
-                    letter: 'T',
-                    name: 'Thüringen',
-                    schoolCount: 3095,
-                    stadtStaat: false,
-                    url: '/Bundesland/Thueringen'
-                }
-            ],
-            personIndexCounts: {
-                a: 1,
-                b: 2,
-                c: 0,
-                d: 2,
-                e: 1,
-                f: 0,
-                g: 1,
-                h: 0,
-                i: 0,
-                j: 0,
-                k: 0,
-                l: 9,
-                m: 18,
-                n: 2,
-                o: 0,
-                p: 0,
-                q: 0,
-                r: 1,
-                s: 4,
-                t: 2,
-                u: 0,
-                v: 1,
-                w: 2,
-                x: 0,
-                y: 0,
-                z: 0
-            },
-            redirect: false,
-            showNewTooltip: false
-        };
-        this.states = {};
-        this.personCount = {};
+        this.bundeslandData = bundeslandData;
+        // statesData = {
+        //   accountDeactivated : false,
+        //   stateList: [
+        //     {
+        //       count : 0,
+        //       foreignCountry : false,
+        //       letter : 'B',
+        //       name : 'Baden-Württemberg',
+        //       schoolCount : 9594,
+        //       stadtStaat : false,
+        //       url : '/Bundesland/Baden-Wuerttemberg'
+        //     },
+        //     {
+        //       count : 0,
+        //       foreignCountry : false,
+        //       letter : 'B',
+        //       name : 'Bayern',
+        //       schoolCount : 9020,
+        //       stadtStaat : false,
+        //       url : '/Bundesland/Bayern'
+        //     },
+        //     {
+        //       count : 0,
+        //       foreignCountry : false,
+        //       letter : 'B',
+        //       name : 'Berlin',
+        //       schoolCount : 4215,
+        //       stadtStaat : true,
+        //       url : '/Bundesland/Berlin'
+        //     },
+        //     {
+        //       count : 0,
+        //       foreignCountry : false,
+        //       letter : 'B',
+        //       name : 'Brandenburg',
+        //       schoolCount : 3505,
+        //       stadtStaat : false,
+        //       url : '/Bundesland/Brandenburg'
+        //     },
+        //     {
+        //       count : 0,
+        //       foreignCountry : false,
+        //       letter : 'B',
+        //       name : 'Bremen',
+        //       schoolCount : 909,
+        //       stadtStaat : false,
+        //       url : '/Bundesland/Bremen'
+        //     },
+        //     {
+        //       count : 0,
+        //       foreignCountry : false,
+        //       letter : 'H',
+        //       name : 'Hamburg',
+        //       schoolCount : 2333,
+        //       stadtStaat : true,
+        //       url : '/Bundesland/Hamburg'
+        //     },
+        //     {
+        //       count : 0,
+        //       foreignCountry : false,
+        //       letter : 'H',
+        //       name : 'Hessen',
+        //       schoolCount : 4763,
+        //       stadtStaat : false,
+        //       url : '/Bundesland/Hessen'
+        //     },
+        //     {
+        //       count : 0,
+        //       foreignCountry : false,
+        //       letter : 'M',
+        //       name : 'Mecklenburg-Vorpommern',
+        //       schoolCount : 2908,
+        //       stadtStaat : false,
+        //       url : '/Bundesland/Mecklenburg-Vorpommern'
+        //     },
+        //     {
+        //       count : 0,
+        //       foreignCountry : false,
+        //       letter : 'N',
+        //       name : 'Niedersachsen',
+        //       schoolCount : 8687,
+        //       stadtStaat : false,
+        //       url : '/Bundesland/Niedersachsen'
+        //     },
+        //     {
+        //       count : 0,
+        //       foreignCountry : false,
+        //       letter : 'N',
+        //       name : 'Nordrhein-Westfalen',
+        //       schoolCount : 17477,
+        //       stadtStaat : false,
+        //       url : '/Bundesland/Nordrhein-Westfalen'
+        //     },
+        //     {
+        //       count : 0,
+        //       foreignCountry : false,
+        //       letter : 'R',
+        //       name : 'Rheinland-Pfalz',
+        //       schoolCount : 3812,
+        //       stadtStaat : false,
+        //       url : '/Bundesland/Rheinland-Pfalz'
+        //     },
+        //     {
+        //       count : 0,
+        //       foreignCountry : false,
+        //       letter : 'S',
+        //       name : 'Saarland',
+        //       schoolCount : 1084,
+        //       stadtStaat : false,
+        //       url : '/Bundesland/Saarland'
+        //     },
+        //     {
+        //       count : 0,
+        //       foreignCountry : false,
+        //       letter : 'S',
+        //       name : 'Sachsen',
+        //       schoolCount : 6189,
+        //       stadtStaat : false,
+        //       url : '/Bundesland/Sachsen'
+        //     },
+        //     {
+        //       count : 0,
+        //       foreignCountry : false,
+        //       letter : 'S',
+        //       name : 'Sachsen-Anhalt',
+        //       schoolCount : 3865,
+        //       stadtStaat : false,
+        //       url : '/Bundesland/Sachsen-Anhalt'
+        //     },
+        //     {
+        //       count : 0,
+        //       foreignCountry : false,
+        //       letter : 'S',
+        //       name : 'Schleswig-Holstein',
+        //       schoolCount : 2826,
+        //       stadtStaat : false,
+        //       url : '/Bundesland/Schleswig-Holstein'
+        //     },
+        //     {
+        //       count : 0,
+        //       foreignCountry : false,
+        //       letter : 'T',
+        //       name : 'Thüringen',
+        //       schoolCount : 3095,
+        //       stadtStaat : false,
+        //       url : '/Bundesland/Thueringen'
+        //     }
+        //   ],
+        //   personIndexCounts : {
+        //     a : 1,
+        //     b : 2,
+        //     c : 0,
+        //     d : 2,
+        //     e : 1,
+        //     f : 0,
+        //     g : 1,
+        //     h : 0,
+        //     i : 0,
+        //     j : 0,
+        //     k : 0,
+        //     l : 9,
+        //     m : 18,
+        //     n : 2,
+        //     o : 0,
+        //     p : 0,
+        //     q : 0,
+        //     r : 1,
+        //     s : 4,
+        //     t : 2,
+        //     u : 0,
+        //     v : 1,
+        //     w : 2,
+        //     x : 0,
+        //     y : 0,
+        //     z : 0
+        //   },
+        //   redirect : false,
+        //   showNewTooltip : false
+        // };
+        this.statesVal = {};
+        this.states = new rxjs__WEBPACK_IMPORTED_MODULE_4__["BehaviorSubject"](this.statesVal);
+        this.personCount = new rxjs__WEBPACK_IMPORTED_MODULE_4__["BehaviorSubject"](this.statesVal);
         this.statesUrl = 'http://localhost:4200/api/bundesland.json';
     }
     getStates() {
         // return this.http.get(this.statesUrl);
-        this.states = this.statesData.stateList;
-        return this.states;
+        // this.states = this.statesData.stateList;
+        this.states.next(this.bundeslandData.stateList);
+        return this.states.asObservable();
     }
     getPersonIndexCount() {
-        this.personCount = this.statesData.personIndexCounts;
-        return this.personCount;
+        // this.personCount = this.statesData.personIndexCounts;
+        this.personCount.next(this.bundeslandData.personIndexCounts);
+        return this.personCount.asObservable();
     }
 };
 StatesService.ctorParameters = () => [
-    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] },
+    { type: _api_bundesland__WEBPACK_IMPORTED_MODULE_3__["Bundesland"] }
 ];
 StatesService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Injectable"])()
