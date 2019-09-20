@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
       if (this.personCount[person] > 0) {
         this.persons.push(currentPersonCount);
       }
-    };
+    }
     // tslint:disable-next-line:forin
     // for (const person in this.states.personIndexCounts) {
     //   const currentPersonCount = {

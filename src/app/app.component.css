@@ -9,16 +9,17 @@ div.data-box {
   padding: 5px;
 }
 
-div.data-box:first-child,
-div.data-box:nth-child(2),
-div.data-box:nth-child(3) {
-  padding-top: 10px;
+div.states:first-child,
+div.states:nth-child(2),
+div.states:nth-child(3) {
+  margin-top: 10px;
 }
 
 div.states {
   display: inline-block;
   box-sizing: border-box;
-  width: 100%;
+  width: calc(33% - 10px);
+  margin: 5px;
   padding: 10px;
   border-style: solid;
   border-color: #ddd;
@@ -37,7 +38,6 @@ div.states {
 
 .states a p {
   margin: 0;
-  /*font-weight: bold;*/
   color: #b3b3b3;
   font-size: 95%;
 }
@@ -63,13 +63,13 @@ div#persons div p {
 }
 
 @media screen and (max-width: 800px) {
-  div.data-box {
-    width: 50%;
+  div.states {
+    width: calc(50% - 10px);
   }
 }
 
 @media screen and (max-width: 500px) {
-  div.data-box {
-    width: 100%;
+  div.states {
+    width: calc(100% - 10px);
   }
 }

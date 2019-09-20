@@ -1,14 +1,10 @@
 <div class="container-box">
-<!--  use only paddings here since the responsive calculation of margins is unpredictable -->
-  <div *ngFor="let state of states" class="data-box">
-    <div class="states">
-      <a href="{{state.url}}">
-        <h2>{{state.name}}</h2>
-        <p>{{state.schoolCount}} Schulen</p>
-      </a>
-    </div>
+  <div *ngFor="let state of states" class="states">
+    <a href="{{state.url}}">
+      <h2>{{state.name}}</h2>
+      <p>{{state.schoolCount}} Schulen</p>
+    </a>
   </div>
-
   <div id="persons" class="flex-container">
     <div *ngFor="let person of persons">
       {{person.name}}
